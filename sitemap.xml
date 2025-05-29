@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://codebloomtech.vercel.app/</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://codebloomtech.vercel.app/sponsor.html</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://codebloomtech.vercel.app/thank-you.html</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.50</priority>
+  </url>
+</urlset>
