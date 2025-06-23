@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "fas fa-laptop-code",
+    "name": "Custom Software Development"
+  },
+  {
+    "icon": "fas fa-desktop",
+    "name": "Front-End Development"
+  },
+  {
+    "icon": "fab fa-wordpress",
+    "name": "Website Development (WordPress)"
+  },
+  {
+    "icon": "fas fa-paint-brush",
+    "name": "Creative Design"
+  },
+  {
+    "icon": "fas fa-database",
+    "name": "Database Design"
+  },
+  {
+    "icon": "fas fa-tools",
+    "name": "Software Installation & Updates"
+  },
+  {
+    "icon": "fas fa-headset",
+    "name": "IT Consulting & Support"
+  }
+]

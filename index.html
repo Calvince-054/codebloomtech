@@ -134,6 +134,39 @@
 .contact-icons p {
   margin: 8px 0;
 }
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #1F6FEB;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .nav-links a {
+    color: white;
+    margin: 0.5rem 0;
+  }
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+  .nav-links.active {
+    display: flex;
+  }
   </style>
 </head>
 <body>
@@ -142,13 +175,18 @@
       <img src="website logo.jpeg" alt="CodeBloom Tech Logo">
       <h1>Code Bloom Tech</h1>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <a href="sponsor.html">Support Our Mission</a>
-    </nav>
+    <nav id="nav-menu" class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#impact">Impact</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="sponsor.html">Support</a>
+  </nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </header>
 
   <section id="home" style="display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; background: #f9fbff;">
@@ -212,6 +250,46 @@
 </div>
   </section>
 
+  <section id="why-us" style="background-color:#f0f8ff;">
+  <h2>Why Choose CodeBloom Tech?</h2>
+  <ul style="margin-top: 1rem; padding-left: 1.2rem; list-style: disc;">
+    <li>✅ Youth-driven, innovative team with fresh ideas</li>
+    <li>✅ Affordable pricing for startups and SMEs</li>
+    <li>✅ Personalized solutions tailored to your business goals</li>
+    <li>✅ Fast turnaround and ongoing support</li>
+    <li>✅ Trusted by local businesses</li>
+  </ul>
+</section>
+
+<section id="testimonials" style="background-color:#fff3e6;">
+  <h2>What Our Clients Say</h2>
+  <div style="margin-top: 1rem;">
+    <blockquote style="margin-bottom:1rem;">“CodeBloom Tech designed our website beautifully and delivered on time. Highly recommended!” – <strong>Wanjiku K., Small Business Owner</strong></blockquote>
+    <blockquote>“Amazing support and professional service. They helped us move our operations online.” – <strong>Brian O., Tech Consultant</strong></blockquote>
+  </div>
+</section>
+
+<section id="impact" style="background-color:#e0f7fa;">
+  <h2>Our Impact</h2>
+  <div style="display: flex; justify-content: space-around; margin-top: 2rem;">
+    <div><h3 style="color:#1F6FEB;">30+</h3><p>Websites Launched</p></div>
+    <div><h3 style="color:#1F6FEB;">50+</h3><p>Businesses Served</p></div>
+    <div><h3 style="color:#1F6FEB;">100%</h3><p>Client Satisfaction</p></div>
+  </div>
+</section>
+
+<section id="faq" style="background-color:#f9f9f9;">
+  <h2>Frequently Asked Questions</h2>
+  <h4>Do I need a website for my small business?</h4>
+  <p>Yes! A website helps you reach more clients and build credibility online.</p>
+  <h4>How long does it take to build a website?</h4>
+  <p>Depending on the features, most projects take 1 to 2 weeks.</p>
+  <h4>Can you maintain our website?</h4>
+  <p>Absolutely! We offer maintenance and support packages tailored to your needs.</p>
+</section>
+
+
+
 <section id="contact">
   <h2>Contact Us</h2>
   <div class="contact-icons">
@@ -256,6 +334,6 @@
   text-decoration: none;">
   <i class="fab fa-whatsapp"></i>
 </a>
-
+<script src="script.js"></script>
 </body>
 </html>
