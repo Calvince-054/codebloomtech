@@ -134,39 +134,47 @@
 .contact-icons p {
   margin: 8px 0;
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Default desktop nav */
 .nav-links {
   display: flex;
   gap: 1.5rem;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
+/* Mobile nav */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
+    background-color: #1F6FEB;
     position: absolute;
     top: 70px;
     right: 20px;
-    background-color: #1F6FEB;
     padding: 1rem;
     border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 999;
   }
+
   .nav-links a {
     color: white;
     margin: 0.5rem 0;
   }
-  .menu-toggle {
-    display: block;
-    color: white;
-  }
+
   .nav-links.active {
     display: flex;
   }
+}
   </style>
 </head>
 <body>
@@ -175,6 +183,7 @@
       <img src="website logo.jpeg" alt="CodeBloom Tech Logo">
       <h1>Code Bloom Tech</h1>
     </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav id="nav-menu" class="nav-links">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -186,7 +195,6 @@
     <a href="#contact">Contact</a>
     <a href="sponsor.html">Support</a>
   </nav>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </header>
 
   <section id="home" style="display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; background: #f9fbff;">
@@ -314,10 +322,6 @@
     &copy; <span id="year"></span> CodeBloom Tech. All rights reserved.
     <p><a href="sponsor.html" style="color: white; text-decoration: underline;">Support Our Mission</a></p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
   <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/254741785258?text=Hello%20CodeBloom%20Tech%2C%20I%27m%20interested%20in%20your%20services!" target="_blank" style="
   position: fixed;
