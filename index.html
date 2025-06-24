@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeBloom Tech – Web Design, Software, and IT Solutions in Kenya</title>
-<meta name="description" content="CodeBloom Tech offers affordable website design, software development, creative branding, and IT support for businesses in Kenya." />
-<meta name="google-site-verification" content="ornmY8fusxnpdTU4CSXDpba2BVA451OPnIlFHgTzJl8" />
-<meta name="msvalidate.01" content="5BA1F42D8AA468D9632AA7176F4A60A0" />
-<meta name="msvalidate.01" content="5BA1F42D8AA468D9632AA7176F4A60A0" />
-<!-- Google tag (gtag.js) -->
+  <meta name="description" content="CodeBloom Tech offers affordable website design, software development, creative branding, and IT support for businesses in Kenya." />
+  <meta name="google-site-verification" content="ornmY8fusxnpdTU4CSXDpba2BVA451OPnIlFHgTzJl8" />
+  <meta name="msvalidate.01" content="5BA1F42D8AA468D9632AA7176F4A60A0" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VD8SLRV8JV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -134,104 +132,63 @@
 .contact-icons p {
   margin: 8px 0;
 }
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #1F6FEB;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    color: white;
-    padding: 0.5rem 0;
-  }
-  
-.menu-icon {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: #1F6FEB;
-    top: 70px;
-    right: 20px;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 999;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 0.5rem 0;
-    color: white;
-  }
-}
+    .menu-icon {
+      display: none;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #1F6FEB;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        z-index: 999;
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+      }
+      .nav-links a {
+        padding: 0.5rem 0;
+        color: white;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-  <div class="logo">
-    <img src="website logo.jpeg" alt="CodeBloom Tech Logo">
-    <h1>Code Bloom Tech</h1>
-  </div>
-
-  <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-  <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#why-us">Why Us</a>
-    <a href="#impact">Impact</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-    <a href="sponsor.html">Support</a>
-  </nav>
-</header>
+    <div class="logo">
+      <img src="website logo.jpeg" alt="CodeBloom Tech Logo">
+      <h1>Code Bloom Tech</h1>
+    </div>
+    <input type="checkbox" id="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#impact">Impact</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="sponsor.html">Support</a>
+    </nav>
+  </header>
 
   <section id="home" style="display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; background: #f9fbff;">
   <div style="max-width: 50%;">
@@ -373,6 +330,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   text-decoration: none;">
   <i class="fab fa-whatsapp"></i>
-</a>
+</a>ste all remaining sections here (home, about, services, etc.) -->
+  <!-- I stopped here to focus on the header fix. Let me know if you want me to paste the full HTML with all sections included too. -->
 </body>
 </html>
