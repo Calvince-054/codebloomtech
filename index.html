@@ -20,6 +20,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papnf7Q+e4D0Dw8CHWbOlGv9LMuQ4z+1TXWEEqZoBh1Az3DfJShsWy7NwoMeUt3Zd0KYi4yMSTiWkPuQmpYvgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- AOS Animate On Scroll Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -100,7 +102,11 @@
   margin-right: 10px;
   color: #1F6FEB;
 }
-
+.cta-button:hover {
+  background-color: #004dcf;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
     footer {
       text-align: center;
       padding: 2rem;
@@ -191,7 +197,7 @@
     </nav>
   </header>
 
-  <section id="home" style="display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; background: #f9fbff;">
+  <section id="home" style="display: flex; align-items: center; justify-content: space-between; padding: 4rem 2rem; background: #f9fbff;" data-aos="fade-down">
   <div style="max-width: 50%;">
     <h1 style="font-size: 2.5rem; color: #1F6FEB;">Let’s Grow Your Business with Digital Solutions</h1>
     <p style="margin: 1rem 0;">Websites, branding, software & IT support — all tailored for your success.</p>
@@ -205,7 +211,7 @@
   </marquee>
   </section>
 
-  <section id="about">
+  <section id="about" data-aos="fade-right">
     <h2>About Us</h2>
     <p style="margin-top: 1rem;">
       CodeBloom Tech is a dynamic and innovative technology company committed to empowering businesses through cutting-edge digital solutions. With a strong focus on creativity and precision, we specialize in a wide range of services tailored to meet the evolving needs of modern organizations and entrepreneurs.
@@ -225,28 +231,28 @@
     <p>To be a leading provider of transformative tech solutions that inspire growth, creativity, and lasting impact in the digital era.</p>
   </section>
 
-  <section id="services">
+  <section id="services" data-aos="fade-up">
     <h2>Our Services</h2>
     <div class="services-grid">
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="100">
     <i class="fas fa-laptop-code"></i> Custom Software Development
   </div>
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="200">
     <i class="fas fa-desktop"></i> Front-End Development
   </div>
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="300">
     <i class="fab fa-wordpress"></i> Website Development (WordPress)
   </div>
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="400">
     <i class="fas fa-paint-brush"></i> Creative Design
   </div>
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="500">
     <i class="fas fa-database"></i> Database Design
   </div>
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="600">
     <i class="fas fa-tools"></i> Software Installation & Updates
   </div>
-  <div class="service-card">
+  <div class="service-card" data-aos="fade-up" data-aos-delay="700">
     <i class="fas fa-headset"></i> IT Consulting & Support
   </div>
 </div>
@@ -263,7 +269,7 @@
   </ul>
 </section>
 
-<section id="testimonials" style="background-color:#fff3e6;">
+<section id="testimonials" style="background-color:#fff3e6;" data-aos="zoom-in">
   <h2>What Our Clients Say</h2>
   <div style="margin-top: 1rem;">
     <blockquote style="margin-bottom:1rem;">“CodeBloom Tech designed our website beautifully and delivered on time. Highly recommended!” – <strong>Wanjiku K., Small Business Owner</strong></blockquote>
@@ -292,7 +298,7 @@
 
 
 
-<section id="contact">
+<section id="contact" data-aos="fade-up">
   <h2>Contact Us</h2>
   <div class="contact-icons">
     <p><i class="fas fa-envelope"></i> <a href="mailto:codebloomt@gmail.com">codebloomt@gmail.com</a></p>
@@ -332,6 +338,14 @@
   text-decoration: none;">
   <i class="fab fa-whatsapp"></i>
 </a>
-<script src="script.js"></script>
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+<script src="script.js" /script>
 </body>
 </html>
