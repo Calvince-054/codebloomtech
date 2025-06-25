@@ -68,7 +68,8 @@ backToTop.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Menu toggle for mobile nav
-function toggleMenu() {
-  const menu = document.getElementById("nav-menu");
-  menu.classList.toggle("active");
-}
+//function toggleMenu() {
+// const navMenu = document.getElementById("nav-menu");
+    //navMenu.classList.toggle("active");
+  //}
+
